@@ -1,0 +1,166 @@
+.shopping-cart {
+	height: 650px;
+	margin-top: 130px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 75px;
+	.titles {
+		width: 1010px;
+		height: 282px;
+		display: flex;
+		align-items: center;
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		color: #000000;
+		&__name {
+			width: 60px;
+			height: 30px;
+			margin-right: 415px;
+		}
+		&__price {
+			width: 55px;
+			height: 30px;
+			margin-right: 135px;
+		}
+		&__amount {
+			width: 120px;
+			height: 30px;
+			margin-right: 165px;
+		}
+		&__total {
+			width: 60px;
+			height: 30px;
+		}
+	}
+	&__goods {
+		// 
+		&__good {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			
+			font-family: 'Raleway';
+			font-weight: 500;
+			&__trash-btn {
+				width: 12px;
+				height: 12px;
+				margin-right: 45px;
+			}
+			&__img {
+				width: 137px;
+				height: 179px;
+				margin-right: 25px;
+			}
+			&__name {
+				width: 265px;
+				font-size: 17px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+			}
+			&__price {
+				width: 180px;
+				height: 24px;
+				font-size: 17px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				margin-right: 40px;
+			}
+			&__amount {
+				width: 47px;
+				height: 47px;
+				margin-right: 205px;
+				text-align: center;
+			}
+			&__total {
+				font-size: 17px;
+				line-height: 140%;
+			}
+		}
+	}
+	.coupons {
+		&__coupon {
+			width: 255px;
+			height: 68px;
+			font-family: 'Raleway';
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 140%;	
+			letter-spacing: 0.02em;
+			color: #868686;
+			border: 0;
+			border-bottom: 1px solid #000;
+			margin-right: 20px;
+		}
+		&__btn {
+			padding: 22px;
+			width: 248px;
+			height: 68px;
+			border: 1px solid #6E9C9F;
+			font-family: 'Raleway';
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 138.9%;
+			text-align: center;
+			letter-spacing: 0.02em;
+			background-color: #fff;
+			color: #6E9C9F;
+
+		}
+	}
+	.checkout {
+		align-self: end;
+		width: 538px;
+		min-height: 120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&__fullprice {
+			font-family: 'Raleway';
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			color: #000000;
+		}
+		&__final {
+			display: flex;
+			justify-content: space-between;
+			
+			&__total {
+				width: 287px;
+				height: 68px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #F1EADC;
+				font-family: 'Raleway';
+				font-weight: 500;
+				font-size: 25px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				color: #000000;
+				
+			}
+			&__btn {
+				padding: 22px;
+				width: 236px;
+				height: 68px;
+				background: #6E9C9F;
+				border: none;
+				font-family: 'Raleway';
+				font-weight: 400;
+				font-size: 17px;
+				line-height: 140%;
+				text-align: center;
+				letter-spacing: 0.02em;
+				color: #FFFFFF;
+			}
+		}
+		
+	}
+
+}

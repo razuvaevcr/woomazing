@@ -1,0 +1,121 @@
+.contacts {
+	padding: 215px 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 130px;
+	width: 1110px;
+	&__map {
+		width: 1109px;
+		height: 476px;
+		background: #DDDDDD;
+	}
+	&__info {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 943px;
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			height: 71px;
+			&-title {
+				width: 173px;
+				height: 28px;
+				font-family: 'Raleway';
+				font-style: normal;
+				font-size: 20px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				
+				color: #000000;
+			}
+			&-subtitle {
+				font-family: 'Raleway';
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				color: #000000;
+			}
+		}
+	}
+	&__title {
+		width: 183px;
+		height: 35px;
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		color: #000000;
+	}
+	&__form {
+		width: 445px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 35px;
+		&__input {
+			padding: 0px;	
+			width: 350px;
+			height: 40px;
+			border: 0;
+			border-bottom: 1px solid #000000;
+			font-family: 'Raleway';
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			color: #868686;
+		}
+		&__textarea {
+			padding: 0px;
+			width: 443px;
+			height: 134px;
+			resize: none;
+			border: 0;
+			border-bottom: 1px solid #000000;
+			font-family: 'Raleway';
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			color: #868686;
+		}
+		&__btn {
+			width: 189px;
+			height: 68px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 22px 50px;
+			background: #6E9C9F;
+			font-family: 'Raleway';
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 138.9%;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #FFFFFF;
+			border: 0;
+		}
+		&__message {
+			box-sizing: border-box;
+			text-align: center;
+			padding: 30px 0;
+			width: 437px;
+			height: 84px;
+			background: #F1EADC;
+			font-family: 'Raleway';
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			color: #000000;
+		}
+	}
+}

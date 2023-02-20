@@ -1,0 +1,131 @@
+.footer {
+	padding: 100px 245px;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #F1EADC;
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		width: 204px;
+		&__logo {
+			display: block;
+			width: 139px;
+			height: 25px;
+		}
+		&__items {
+			margin-top: 73px;
+			display: flex;
+			flex-direction: column;
+		}
+		&__item {
+			width: 204px;
+			height: 18px;
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			color: #000000;
+			flex: none;
+			order: 1;
+			flex-grow: 0;
+			text-decoration: none;
+		}
+	}
+	.menu {
+		&__main {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0px;
+			gap: 45px;
+			width: 400px;
+			height: 21px;
+			left: 530px;
+			top: 104px;
+			&-item {
+				height: 21px;
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				color: #000000;
+				text-decoration: none;
+			}
+		}
+		&__wear {
+			margin: 40px 0 0 105px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 10px;
+			width: 70px;
+			height: 102px;
+			left: 637px;
+			top: 164px;
+			&-item {
+				width: 70px;
+				height: 18px;
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				color: #000000;
+				text-decoration: none;
+			}
+		}
+	}
+	&__contacts {
+		height: 156px;
+		width: 158px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: space-between;
+		&__office {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: space-between;
+			width: 158px;
+			height: 51px;
+			:first-child {
+				width: 129px;
+			}
+			&-item {
+				width: 158px;
+				height: 21px;
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 140%;
+				letter-spacing: 0.02em;
+				color: #000000;
+			}
+		}
+		&__socials {
+			width: 90px;
+			height: 23px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			&-img {
+				width: 21px;
+				height: 21px;
+			}
+		}
+		
+	}
+}
