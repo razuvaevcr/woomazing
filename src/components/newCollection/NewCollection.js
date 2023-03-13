@@ -1,5 +1,5 @@
 import good from '../../resources/img/usa.jpg'
-import './newCollectioin.scss'
+import './newCollection.scss'
 
 const NewCollection = () => {
 	return (

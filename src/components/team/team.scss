@@ -1,68 +1,111 @@
 .team {
-	padding: 138px 266px 47px;
+	padding: 138px 0 47px 47px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	margin: 0 auto;
 	gap: 92px;
-	width: 1108px;
-	height: 623px;
-	font-family: 'Raleway';
+	width: 1110px;
 	font-weight: 500;
-	.title {
+	box-sizing: content-box;
+	&__title {
 		width: 530px;
 		height: 44px;
 		font-size: 40px;
 		line-height: 110%;
-		letter-spacing: 0.02em;
 		color: #000000;
 	}
-	.slider {
-		padding: 0px;
-		width: 1108px;
+	&__wrapper {
+		display: flex;
+		width: 1110px;
+		align-items: center;
+		gap: 124px;
+		position: relative;
+	}
+	&__slider {
+		width: 730px;
+		max-width: 1108px;
 		height: 487px;
-		&__slide {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap: 124px;
-			&-img {
-				width: 729px;
-				height: 487px;
-			}
-			&-text {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				padding: 0px;
-				gap: 28px;
-				width: 255px;
-				height: 331px;
-			}
-			&-title {
-				width: 150px;
-				height: 35px;
-				font-size: 25px;
-				line-height: 140%;
-				letter-spacing: 0.02em;
-				color: #000000;
-			}
-			&-description  {
-				width: 255px;
-				height: 216px;
-				font-size: 17px;
-				line-height: 140%;
-				letter-spacing: 0.02em;
-				color: #000000;
-			}
-			a {
-				width: 180px;
-				height: 24px;
-				font-size: 17px;
-				line-height: 140%;
-				letter-spacing: 0.02em;
-				color: #6E9C9F;
-				text-decoration: none;
-			}
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		&__img {
+			width: 730px;
+			height: 487px;
+		}
+		&__btn-prev {
+			position: absolute;
+			left: -70px;
+			padding: 5px;
+			cursor: pointer;
+		}
+		&__btn-next {
+			position: absolute;
+			left: 770px;
+			transform: rotate(180deg);
+			padding: 5px;
+			cursor: pointer;
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 28px;
+		width: 255px;
+		height: 331px;
+		&__title {
+			width: 150px;
+			height: 35px;
+			font-size: 25px;
+			line-height: 140%;
+			color: #000000;
+		}
+		&__description  {
+			width: 255px;
+			height: 216px;
+			font-size: 17px;
+			line-height: 140%;
+			color: #000000;
+			text-align: left;
+		}
+		a {
+			width: 180px;
+			height: 24px;
+			font-size: 17px;
+			line-height: 140%;
+			color: #6E9C9F;
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+
+.slide {
+	&-enter {
+		opacity: 0;
+		transition: opacity 500ms ease-in;
+		&-active {
+			opacity: 1;
+			transition: opacity 500ms ease-in;
+		}
+		&-done {
+			opacity: 1;
+			transition: opacity 500ms ease-in;
+		}
+	}
+	&-exit {
+		opacity: 1;
+		transition: opacity 500ms ease-in;
+		&-active {
+			opacity: 0;
+			transition: opacity 500ms ease-in;
+		}
+		&-done {
+			opacity: 0;
+			transition: opacity 500ms ease-in;
 		}
 	}
 }

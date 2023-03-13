@@ -1,21 +1,24 @@
 .header {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	height: 120px;
+	height: 95px;
 	width: 100%;
-	box-sizing: border-box;
 	padding: 0 245px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 100;
+	&_white {
+		background-color: #fff;
+	}
 	&__logo {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		padding: 0px;
 		gap: 11px;
-		width: 139px;
-		height: 25px;
+		width: 140px;
+		height: 40px;
 	}
 	&__menu {
 		display: flex;
@@ -23,7 +26,6 @@
 		align-items: center;
 		padding: 0px;
 		gap: 45px;
-
 		// position: absolute;
 		width: 400px;
 		height: 21px;
@@ -35,10 +37,7 @@
 			font-weight: 400;
 			font-size: 15px;
 			line-height: 140%;
-			/* identical to box height, or 21px */
-			letter-spacing: 0.02em;
 			color: #000000;
-			/* Inside auto layout */
 			flex: none;
 			order: 2;
 			flex-grow: 0;

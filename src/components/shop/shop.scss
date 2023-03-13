@@ -1,0 +1,73 @@
+.shop {
+	box-sizing: border-box;
+	margin-top: 215px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	width: 1110px;
+	.categorys {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px;
+		gap: 10px;
+		width: 1050px;
+		height: 62px;
+		&-item {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 19px 0;
+			gap: 10px;
+			width: 191px;
+			height: 62px;
+			border: 1px solid #000000;
+			text-decoration: none;
+			color: #000000;
+		}
+	}
+	&__quality {
+		width: 220px;
+		height: 24px;
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		color: #808080;
+		&_top {
+			margin-top: 92px;
+		}
+		&_bottom {
+			margin-top: 65px;
+		}
+	}
+	&__pages {
+		margin-top: 65px;
+		display: flex;
+		flex-direction: row;
+		align-self: center;
+		align-items: center;
+		padding: 0px;
+		gap: 14px;
+		height: 41px;
+		&-page{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+			width: 41px;
+			height: 41px;
+			border: 1px solid #000000;
+			font-family: 'Raleway';
+			font-weight: 500;
+			font-size: 17px;
+			color: #000000;
+			text-decoration: none;
+		}
+	}
+}

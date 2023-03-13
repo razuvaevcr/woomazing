@@ -1,14 +1,15 @@
 import Offer from "../offer/Offer";
 import Important from "../important/Important";
 import Team from "../team/Team";
-
+import Collection from "../newCollection/NewCollection";
 
 const MainPage = () => {
 	return (
 		<>
-			<Offer/>
-			<Important/>
-			<Team/>
+			{/* <Offer/> */}
+			<Collection/>
+			{/* <Important/> */}
+			{/* <Team/> */}
 		</>
 	)
 }

@@ -1,17 +1,17 @@
-import {AppHeader, AppFooter, MainPage, WrapperPage, SinglePage} from "../pages/index";
+import { AppHeader, AppFooter, MainPage, WrapperPage, SinglePage } from "../pages/index";
 
-import "./app.scss";
+import "../../style/style.scss";
 
 function App() {
-  return (
-    <>
-      <AppHeader />
-      {/* <MainPage/> */}
-      {/* <WrapperPage/> */}
-      <SinglePage/>
-      <AppFooter />
-    </>
-  );
+	return (
+		<div className="app">
+			<AppHeader />
+			{/* <MainPage /> */}
+			<WrapperPage/>
+			{/* <SinglePage/> */}
+			<AppFooter />
+		</div>
+	);
 }
 
 export default App;

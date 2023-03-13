@@ -3,57 +3,83 @@
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
-	&__slider {
+	&__wrapper {
+		width: 565px;
 		height: 385px;
-		padding: 265px 0 0 230px;
-		&-wrapper {
-			width: 563px;
-			height: 250px;
+		margin: 265px 0 0 230px;
+		&__btn {
+			margin: 52px 0 0 90px;
+			width: 320px;
+			height: 70px;
+			display: flex;
+			&-down {
+				width: 70px;
+				height: 70px;
+				background: rgba(110, 156, 159, 0.1);
+				border: none;
+				cursor: pointer;
+			}
 		}
-		&-slide {
+	}
+	&__slider {
+		height: 250px;
+		position: relative;
+		&__slide {
+			position: absolute;
+			top: 0;
+			left: 0;
 			height: 250px;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: space-between;
+			&__title {
+				margin: 0;
+				font-family: 'Raleway';
+				font-weight: 500;
+				font-size: 55px;
+				line-height: 110%;
+				letter-spacing: 0.02em;
+				color: #000000;
+				text-align: left;
+			}
+			&__subtitle {
+				width: 385px;
+				height: 84px;
+				font-family: 'Raleway';
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 140%;
+				text-align: right;
+				letter-spacing: 0.02em;
+				color: #000000;
+			}
 		}
-		&-title {
-			margin: 0;
-			font-family: 'Raleway';
-			font-weight: 500;
-			font-size: 55px;
-			line-height: 110%;
-			letter-spacing: 0.02em;
-			color: #000000;
-		}
-		&-subtitle {
-			width: 385px;
-			height: 84px;
-			font-family: 'Raleway';
-			font-weight: 400;
-			font-size: 20px;
-			line-height: 140%;
-			text-align: right;
-			letter-spacing: 0.02em;
-			color: #000000;
-		}
-		&-btn {
-			margin: 52px 0 0 90px;
-			padding: 22px 45px;
-			width: 310px;
-			height: 68px;
-			background: #6E9C9F;
-			border: none;
-			font-family: 'Raleway';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 17px;
-			line-height: 140%;
-			text-align: center;
-			letter-spacing: 0.02em;
-			color: #FFFFFF;
-		}
-
+		&__dots {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0px;
+			gap: 12px;
+		
+			position: absolute;
+			width: 114px;
+			height: 4px;
+			left: 290px;
+			top: 500px;
+			&__dot {
+				width: 30px;
+				height: 4px;
+				background: #D1D1D1;
+				transition: background 700ms ease-in;
+				border: 0;
+				cursor: pointer;
+				&-active {
+					transition: background 700ms ease-in;
+					background: #000000;
+				}
+			}
+		  }
 	}
 	&__pictures {
 		justify-self: center;
@@ -77,6 +103,35 @@
 			position: absolute;
 			top: 243px;
 			left: 368px;
+		}
+	}
+}
+
+//АНИМАЦИЯ СЛАЙДОВ
+
+.item {
+	&-enter {
+		opacity: 0;
+		transition: opacity 500ms ease-in;
+		&-active {
+			opacity: 1;
+			transition: opacity 500ms ease-in;
+		}
+		&-done {
+			opacity: 1;
+			transition: opacity 500ms ease-in;
+		}
+	}
+	&-exit {
+		opacity: 1;
+		transition: opacity 500ms ease-in;
+		&-active {
+			opacity: 0;
+			transition: opacity 500ms ease-in;
+		}
+		&-done {
+			opacity: 0;
+			transition: opacity 500ms ease-in;
 		}
 	}
 }
