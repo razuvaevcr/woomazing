@@ -1,30 +1,25 @@
-import './goodsList.scss';
-import good from '../../resources/img/usa.jpg';
+import { useEffect } from 'react';
 
-const GoodsList = () => {
+import './goodsList.scss';
+
+
+const GoodsList = ({goods}) => {
+	const renderItems = (arr) => {
+		const items = arr.map((item) => (
+			<div key={item.id} className="goods__list-item">
+				<a href="#"><img src={item.img} alt="good" /></a>
+				<div className="goods__list-item-description">{`${item.name}$`}</div>
+				<div className="goods__list-item-price">{`${item.price}$`}</div>
+			</div>
+		))
+		return (
+			<div className="goods__list">
+				{items}
+			</div>
+		)
+	}
 	return (
-		<div className="goods__list">
-			<div className="goods__list-item">
-				<a href="#"><img src={good} alt="good" /></a>
-				<div className="goods__list-item-description">Футболка USA</div>
-				<div className="goods__list-item-price">124$</div>
-			</div>
-			<div className="goods__list-item">
-				<a href="#"><img src={good} alt="good" /></a>
-				<div className="goods__list-item-description">Футболка USA</div>
-				<div className="goods__list-item-price">124$</div>
-			</div>
-			<div className="goods__list-item">
-				<a href="#"><img src={good} alt="good" /></a>
-				<div className="goods__list-item-description">Футболка USA</div>
-				<div className="goods__list-item-price">124$</div>
-			</div>
-			<div className="goods__list-item">
-				<a href="#"><img src={good} alt="good" /></a>
-				<div className="goods__list-item-description">Футболка USA</div>
-				<div className="goods__list-item-price">124$</div>
-			</div>
-		</div>
+		renderItems(goods)
 	)
 }
 

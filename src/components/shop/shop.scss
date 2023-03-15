@@ -6,7 +6,7 @@
 	align-items: flex-start;
 	padding: 0px;
 	width: 1110px;
-	.categorys {
+	.categories {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -27,6 +27,12 @@
 			border: 1px solid #000000;
 			text-decoration: none;
 			color: #000000;
+			background-color: #fff;
+			cursor: pointer;
+		}
+		.active {
+			background-color: #000000;
+			color: #fff;
 		}
 	}
 	&__quality {
